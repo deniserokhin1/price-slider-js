@@ -1,0 +1,108 @@
+@import "../../node_modules/modern-css-reset/src/reset.css";
+@import "./fonts.css";
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #17a2b8;
+    font-family: "MyFont";
+}
+
+.container {
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 25px 40px;
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    &__text {
+        margin-top: 5px;
+        font-size: 16px;
+    }
+}
+
+.price-input {
+    width: 100%;
+    margin: 30px 0 35px;
+    display: flex;
+    &__separator {
+        width: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 19px;
+    }
+}
+
+.filed {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    &__input {
+        width: 100%;
+        height: 100%;
+        margin-left: 12px;
+        border: 1px solid #999;
+        border-radius: 6px;
+        outline: none;
+        text-align: center;
+        font-size: 19px;
+        -moz-appearance: textfield;
+    }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.slider {
+    position: relative;
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+    &__progress {
+        height: 5px;
+        left: 25%;
+        right: 25%;
+        position: absolute;
+        background: #17a2b8;
+        border-radius: 5px;
+    }
+}
+
+.range {
+    position: relative;
+    &__input {
+        position: absolute;
+        top: -5px;
+        height: 5px;
+        width: 100%;
+        background: none;
+        pointer-events: none;
+        -webkit-appearance: none;
+    }
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    background: #17a2b8;
+}
+
+input[type="range"]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    pointer-events: auto;
+    -moz-appearance: none;
+    background: #17a2b8;
+}
